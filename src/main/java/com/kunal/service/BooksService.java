@@ -35,4 +35,12 @@ public class BooksService {
 	public void update(Books books, int bookid) {
 		booksRepository.save(books);
 	}
+
+	public BooksRepository getBooksRepository() {
+		return booksRepository;
+	}
+
+	public void setBooksRepository(BooksRepository booksRepository) {
+		this.booksRepository = booksRepository;
+	}
 }
